@@ -383,6 +383,11 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1204549435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8062802449663621662, guid: fb6c4d6cef4125144b145d853a493ec8, type: 3}
+  m_PrefabInstance: {fileID: 8079546269099757410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8079546269099757410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -441,13 +446,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 519455633846452306, guid: fb6c4d6cef4125144b145d853a493ec8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 812472894}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8062802449663621662, guid: fb6c4d6cef4125144b145d853a493ec8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8079546269099757418}
+    - targetCorrespondingSourceObject: {fileID: 8062802449663621662, guid: fb6c4d6cef4125144b145d853a493ec8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8079546269099757417}
   m_SourcePrefab: {fileID: 100100000, guid: fb6c4d6cef4125144b145d853a493ec8, type: 3}
 --- !u!4 &8079546269099757411 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 519455633846452306, guid: fb6c4d6cef4125144b145d853a493ec8, type: 3}
   m_PrefabInstance: {fileID: 8079546269099757410}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8079546269099757417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204549435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15875b4d4b62bf840a4d28df286f546d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Energy
+  energy: 1000
+--- !u!114 &8079546269099757418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204549435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b55cebe57ea3b4c9243bb5cfd731dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthScript
+  integrity: 0
+  shields: 0
+  shieldRechargeRate: 10
+  energyDrainPerSecond: 2
+  maxIntegrity: 250
+  maxShields: 150
+  DoTRate: 0
+  frontFire: {fileID: 0}
+  rearFire: {fileID: 0}
+  sideFire: {fileID: 0}
+  infernoRound: {fileID: 0}
+  macCannonRound: {fileID: 0}
+  deathExplosion: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
